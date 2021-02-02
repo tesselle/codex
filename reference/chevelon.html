@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>IntCal13 — intcal13 • codex</title>
+<title>Chevelon Ground Stone — chevelon • codex</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="IntCal13 — intcal13" />
-<meta property="og:description" content="The IntCal series of radiocarbon calibration curves." />
+<meta property="og:title" content="Chevelon Ground Stone — chevelon" />
+<meta property="og:description" content="A dataset of ground stone artifact counts from the Cholla project (USA)." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@nfrerebeau" />
 <meta name="twitter:site" content="@nfrerebeau" />
@@ -111,41 +111,48 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>IntCal13</h1>
-    <small class="dont-index">Source: <a href='https://github.com/tesselle/codex/blob/master/R/data-carbon.R'><code>R/data-carbon.R</code></a></small>
-    <div class="hidden name"><code>intcal13.Rd</code></div>
+    <h1>Chevelon Ground Stone</h1>
+    <small class="dont-index">Source: <a href='https://github.com/tesselle/codex/blob/master/R/data-counts.R'><code>R/data-counts.R</code></a></small>
+    <div class="hidden name"><code>chevelon.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>The IntCal series of radiocarbon calibration curves.</p>
+    <p>A dataset of ground stone artifact counts from the Cholla project (USA).</p>
     </div>
 
-    <pre class="usage"><span class='va'>intcal13</span></pre>
+    <pre class="usage"><span class='va'>chevelon</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5 variables:</p><dl>
-<dt>calBP</dt><dd><p>Calendar (calibrated) age (year BP).</p></dd>
-<dt>age</dt><dd><p>Radiocarbon age (year BP).</p></dd>
-<dt>error</dt><dd><p>Radiocarbon error (year BP).</p></dd>
-<dt>delta</dt><dd><p>Isotopic ratio \(\Delta^{14}C\) (per mil).</p></dd>
-<dt>sigma</dt><dd><p>Error on <code>delta</code> (per mil).</p></dd>
+    <p>A data frame with 12 rows and 10 variables (ground stone types):</p><dl>
+<dt>BMe</dt><dd><p>Basin metate.</p></dd>
+<dt>SMe</dt><dd><p>Slab metate.</p></dd>
+<dt>TMe</dt><dd><p>Trough metate.</p></dd>
+<dt>IMe</dt><dd><p>Indeterminate metate.</p></dd>
+<dt>UMa</dt><dd><p>Unifacial mano.</p></dd>
+<dt>BMa</dt><dd><p>Bifacial mano.</p></dd>
+<dt>MUHa</dt><dd><p>Modified unifacial handstone.</p></dd>
+<dt>MBHa</dt><dd><p>Modified bifacial handstone.</p></dd>
+<dt>UUHa</dt><dd><p>Unmodified unifacial handstone.</p></dd>
+<dt>UBHa</dt><dd><p>Unmodified bifacial handstone.</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Reimer, P. J., Bard, E. Bayliss, A., Beck, J. W., Blackwell, P. G.,
-Bronk Ramsey, C., Buck, C. E. <em>et al.</em> (2013). IntCal13 and Marine13
-Radiocarbon age Calibration Curves 0-50,000 Years cal BP.
-<em>Radiocarbon</em>, 55(4): 1869‑87. doi: <a href='https://doi.org/10.2458/azu_js_rc.55.16947'>10.2458/azu_js_rc.55.16947</a>
-.</p>
+    <p>Reid, J. J. (ed.) (1982). <em>Cholla Project Archaeology</em>. Vol. 2.
+Archaeological Series 161. Tucson: University of Arizona.
+doi: <a href='https://doi.org/10.6067/XCV8435710'>10.6067/XCV8435710</a></p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>Other radiocarbon dating: 
-<code><a href='intcal09.html'>intcal09</a></code>,
-<code><a href='intcal20.html'>intcal20</a></code></p></div>
+    <div class='dont-index'><p>Other count data: 
+<code><a href='birds.html'>birds</a></code>,
+<code><a href='boves.html'>boves</a></code>,
+<code><a href='compiegne.html'>compiegne</a></code>,
+<code><a href='merzbach.html'>merzbach</a></code>,
+<code><a href='mississippi.html'>mississippi</a></code>,
+<code><a href='zuni.html'>zuni</a></code></p></div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
