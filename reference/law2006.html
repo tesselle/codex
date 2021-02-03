@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NA • codex</title>
+<title>Law Dome Ice Core — law2006 • codex</title>
 
 
 <!-- jquery -->
@@ -18,8 +18,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 
 <!-- bootstrap-toc -->
-<link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script>
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
@@ -33,13 +33,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
-<link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script>
+<link href="../pkgdown.css" rel="stylesheet">
+<script src="../pkgdown.js"></script>
 
 
 
 
-<meta property="og:title" content="NA" />
+<meta property="og:title" content="Law Dome Ice Core — law2006" />
+<meta property="og:description" content="Law Dome Ice Core 2000-year \(CH_4\), \(CO_2\) and
+\(N_{2}O\) data." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@nfrerebeau" />
 <meta name="twitter:site" content="@nfrerebeau" />
@@ -61,7 +63,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-title-body">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -73,7 +75,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">codex</a>
+        <a class="navbar-link" href="../index.html">codex</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
       </span>
     </div>
@@ -81,16 +83,16 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">
+  <a href="../index.html">
     <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="reference/index.html">Reference</a>
+  <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="news/index.html">Changelog</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -111,44 +113,68 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>NA</h1>
+    <h1>Law Dome Ice Core</h1>
+    <small class="dont-index">Source: <a href='https://github.com/tesselle/codex/blob/master/R/data-isotopes.R'><code>R/data-isotopes.R</code></a></small>
+    <div class="hidden name"><code>law2006.Rd</code></div>
     </div>
 
+    <div class="ref-description">
+    <p>Law Dome Ice Core 2000-year \(CH_4\), \(CO_2\) and
+\(N_{2}O\) data.</p>
+    </div>
 
-<div id="description" class="section level2">
-<h2 class="hasAnchor">
-<a href="#description" class="anchor"></a>Description</h2>
-<!--- Describe your changes in detail -->
-</div>
-<div id="related-issue" class="section level2">
-<h2 class="hasAnchor">
-<a href="#related-issue" class="anchor"></a>Related Issue</h2>
-<!--- if this closes an issue make sure include e.g., "fix #4"
-or similar - or if just relates to an issue make sure to mention
-it like "#4" -->
-</div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<!--- if introducing a new feature or changing behavior of existing
-methods/functions, include an example if possible to do in brief form -->
-<!--- Did you remember to include tests? Unless you're just changing
-grammar, please include new tests for your change -->
-</div>
+    <pre class="usage"><span class='va'>law2006</span></pre>
 
 
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>A data frame with 2004 observations and 8 variables:</p><dl>
+<dt>year</dt><dd><p>Year AD.</p></dd>
+<dt>NOAA04</dt><dd><p>NOAA04 \(CH_4\) scale.</p></dd>
+<dt>CH4_spl</dt><dd><p>\(CH_4\) spline (ppb).</p></dd>
+<dt>CH4_grw</dt><dd><p>\(CH_4\) growth Rate (ppb/yr).</p></dd>
+<dt>CO2_spl</dt><dd><p>\(CO_2\) spline (ppb).</p></dd>
+<dt>CO2_grw</dt><dd><p>\(CO_2\) growth Rate (ppb/yr).</p></dd>
+<dt>N2O_spl</dt><dd><p>\(N_{2}O\) spline (ppb).</p></dd>
+<dt>N2O_grw</dt><dd><p>\(N_{2}O\) growth Rate (ppb/yr).</p></dd>
+
+</dl>
+
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p><a href='https://www.ncdc.noaa.gov/paleo-search/study/9959'>https://www.ncdc.noaa.gov/paleo-search/study/9959</a></p>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
+    <p>MacFarling Meure, C., Etheridge, D., Trudinger, C., Steele, P., Langenfelds,
+R., van Ommen, T., Smith, A. and Elkins, J. (2006). The Law Dome CO2, CH4
+and N2O Ice Core Records Extended to 2000 years BP. <em>Geophysical
+Research Letters</em>, 33(14), L14810. doi: <a href='https://doi.org/10.1029/2006GL026152'>10.1029/2006GL026152</a>
+.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>Other palaeoenvironment: 
+<code><a href='epica2008.html'>epica2008</a></code>,
+<code><a href='lisiecki2005.html'>lisiecki2005</a></code>,
+<code><a href='spratt2016.html'>spratt2016</a></code></p></div>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span>
+  x <span class='op'>=</span> <span class='va'>law2006</span><span class='op'>$</span><span class='va'>year</span>,
+  y <span class='op'>=</span> <span class='va'>law2006</span><span class='op'>$</span><span class='va'>CO2_spl</span>,
+  type <span class='op'>=</span> <span class='st'>"l"</span>,
+  xlab <span class='op'>=</span> <span class='st'>"Year AD"</span>,
+  ylab <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='st'>"CO"</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>~</span><span class='st'>"(ppm)"</span><span class='op'>)</span>
+<span class='op'>)</span>
+</div><div class='img'><img src='law2006-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
-
 </div>
-
 
 
       <footer>
